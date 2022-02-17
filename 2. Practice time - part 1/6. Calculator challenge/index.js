@@ -2,6 +2,28 @@ let num1 = 8
 let num2 = 2
 document.getElementById("num1-el").textContent = num1
 document.getElementById("num2-el").textContent = num2
+let sumEl = document.getElementById("sum-el")
+
+function add() {
+    let answer = num1 + num2;
+    sumEl.textContent = "Sum: " + answer;
+}
+
+function subtract() {
+    let answer = num1 - num2;
+    sumEl.textContent = "Sum: " + answer;
+}
+
+function divide() {
+    let answer = num1 / num2;
+    sumEl.textContent = "Sum: " + answer;
+}
+
+function multiply() {
+    let answer = num1 * num2;
+    sumEl.textContent = "Sum: " + answer;
+}
+
 
 // Create four functions: add(), subtract(), divide(), multiply()
 // Call the correct function when the user clicks on one of the buttons
