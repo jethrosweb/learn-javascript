@@ -1,5 +1,9 @@
-let name = "Linda"
+let firstName = "Linda"
 let greeting = "Hi there"
 
 // Create a function that logs out "Hi there, Linda!" when called
+function myGreeting() {
+    console.log(greeting + ", " + firstName + "!");
+}
 
+myGreeting();

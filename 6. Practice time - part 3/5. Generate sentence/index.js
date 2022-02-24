@@ -9,5 +9,14 @@
 
 // Use both a for loop and a template string to solve the challenge
 function generateSentence(desc, arr) {
-    
+    let baseString = `The ${arr.length} ${desc} are `
+    const lastIndex = arr.length - 1
+    for (let i = 0; i < arr.length; arr++) {
+        if (i === lastIndex) {
+            baseString += arr[i] 
+        } else {
+            baseString += arr[i] + ", "
+        }  
+    }
+    return baseString
 }

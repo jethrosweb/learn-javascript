@@ -12,5 +12,10 @@ let messages = [
 
 let newMessage = "Same here!"
 
+messages.push(newMessage)
+
+messages.pop(newMessage)
+
+console.log(messages)
 
 
